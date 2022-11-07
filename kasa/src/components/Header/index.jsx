@@ -4,7 +4,7 @@ export default function Header() {
     return(
         <nav>
             <Link to="/">Accueil</Link>
-            <Link to="/services">Services</Link>
+            <Link to="/about">A propos</Link>
         </nav>
     )
 }

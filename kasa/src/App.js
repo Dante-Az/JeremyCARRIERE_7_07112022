@@ -1,6 +1,8 @@
 import {Routes, Route} from "react-router-dom"
 import Home from "./pages/Home/Home"
-import Services from "./pages/Services/Services";
+import About from "./pages/About/About"
+import Erreur from "./pages/Erreur/Erreur"
+import Logement from "./pages/Logement/Logement";
 import Header from "./components/Header";
 
 function App(){
@@ -9,9 +11,10 @@ function App(){
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/services" element={<Services />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/logement" element={<Logement />} />
+                <Route path="*" element={<Erreur />} />
             </Routes>
-
         </div>
     )
 }
