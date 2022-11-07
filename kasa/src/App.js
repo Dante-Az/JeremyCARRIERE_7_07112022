@@ -3,7 +3,7 @@ import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
 import Erreur from "./pages/Erreur/Erreur"
 import Logement from "./pages/Logement/Logement";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 
 function App(){
     return(
