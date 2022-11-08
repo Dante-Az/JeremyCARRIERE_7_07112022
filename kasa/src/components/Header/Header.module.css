@@ -1,3 +1,28 @@
-.green {
-    background-color: green;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .navbar {
+    display: flex
+    
+} */
+
+.navList {
+    display: flex;
+}
+
+.navItems {
+    list-style: none;
+    padding: 10px; 
+}
+
+.navLink {
+    text-decoration: none;
+    color: #FF6060;
+}
+
+.salmon {
+   fill: #FF6060
 }

@@ -1,13 +1,21 @@
-import logo from "../../assets/LOGO.svg"
+import {ReactComponent as Logo} from '../../assets/LOGO.svg';
 import styles from "./Header.module.css"
 import {Link} from "react-router-dom"
 
 export default function Header() {
     return(
-        <nav>
-            <img src={logo} alt="logo" className={styles.green} />
-            <Link to="/">Accueil</Link>
-            <Link to="/about">A propos</Link>
-        </nav>
+        <header className={styles.header}>
+            <Logo className={styles.salmon} />
+            <nav>
+                <ul className={styles.navList}>
+                    <li className={styles.navItems}>
+                        <Link to="/" className={styles.navLink}>Accueil</Link>
+                    </li>
+                    <li className={styles.navItems}>
+                        <Link to="/about" className={styles.navLink}>A propos</Link>
+                    </li>  
+                </ul>    
+            </nav>
+        </header>
     )
 }
