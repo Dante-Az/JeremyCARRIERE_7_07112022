@@ -1,0 +1,18 @@
+.banner {
+    position: relative;
+    margin-top: 63px;
+    height: 263px;
+}
+
+.bannerImg {
+    border-radius: 25px;
+    filter: brightness(70%);
+}
+.bannerText {
+    position: absolute;
+    color: white;
+    top: 76px;
+    left:263px;
+    font-size: 48px;
+    font-weight: 500;
+}
