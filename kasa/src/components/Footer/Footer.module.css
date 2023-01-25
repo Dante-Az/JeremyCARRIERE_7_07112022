@@ -4,10 +4,6 @@
     align-items: center;
     height: 209px;
     background-color: black;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
 }
 
 .footerLogo {
@@ -19,4 +15,14 @@
 .footerText {
     color: white;
     font-size: 24px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:460px) {
+
+    .footerText {
+        font-size: 12px;
+    }
+    
 }

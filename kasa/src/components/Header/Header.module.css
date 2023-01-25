@@ -2,27 +2,36 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 35px;
 }
 
-/* .navbar {
-    display: flex
-    
-} */
-
-.navList {
-    display: flex;
+.headerLogo {
+   fill: #FF6060;
+   height: 68px;
+   width: auto;
 }
 
-.navItems {
-    list-style: none;
-    padding: 10px; 
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        margin-top: 20px
+    }
+
+    .headerLogo {
+        height: 50px;
+    }
 }
 
-.navLink {
-    text-decoration: none;
-    color: #FF6060;
+@media screen and (max-width: 460px) {
+    .headerLogo {
+        height: 47px;
+    }
 }
 
-.salmon {
-   fill: #FF6060
+@media screen and (max-width: 355px) {
+    .headerLogo {
+        height: 40px;
+    }
 }
