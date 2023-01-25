@@ -8,8 +8,11 @@ import TagsMap from '../../components/Tags/TagsMap';
 import RatingArray from '../../components/Rating/RatingArray';
 import styles from './Logement.module.css';
 export default function Logement() {
- 
+
+    // On appelle le hook useParams qu'on va utiliser pour récupérer l'id
     const params = useParams();
+
+    // On déclare plusieurs nouvelles variables d'état pour tous les éléments qu'on veut afficher sur la page
     const [logements, setLogements] = useState(null);
     const [logement, setLogement] = useState({});
     const [tags, setTags] = useState([]);
@@ -19,20 +22,25 @@ export default function Logement() {
     const [description, setDescription] = useState("");
     const [equipments, setEquipments] = useState("");
 
+    // On appelle le hook useNavigate pour rediriger l'user
     let navigate = useNavigate();
 
+    // On utilise useEffect pour fetch les donnés du json
     useEffect(() => {
         fetch("../logement.json")
         .then(res => res.json())
         .then(body => setLogements(body));
     }, []);
 
+
+    // Gestion des données dans les states et gestion des erreurs
     useEffect(() => {
+        // Si logements est null on break
         if (logements === null){
         return;
         }
-
-    const logement = logements.find((element) => element.id === params.id);
+        // Sinon on continue l'execution du code pour récupérer les données
+        const logement = logements.find((element) => element.id === params.id);
         if(logement){
         setLogement(logement);
         setTags(logement.tags);
@@ -42,7 +50,7 @@ export default function Logement() {
         setDescription(logement.description);
         setEquipments(logement.equipments);
 
-
+        // Si logement est false, alors on redirige vers la page Erreur    
         } else {
         navigate('*', { replace: true });
         }
@@ -61,8 +69,6 @@ export default function Logement() {
                     location = {logement.location}
                     />
                     <div className={styles.tagsContainer}>
-                        {/* {thisLogement.tags.map(tagList => (
-                        <Tags tag = {tagList} />))} */}
                         <TagsMap tag = {tags}/>
                     </div>
                 </div>

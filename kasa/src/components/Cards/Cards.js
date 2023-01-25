@@ -2,6 +2,7 @@ import styles from './Cards.module.css'
 import {Link} from 'react-router-dom'
 export default function Cards(props) {
     return(
+        // On dirige l'user sur la page du logement en fonction de l'id de ce dernier
         <Link to={`/logement/${props.id}`} className={styles.cardsBox}>
         <div className={styles.cards}>
             <img src={props.cover} alt="photos d'appartement" className={styles.cardsImage} />

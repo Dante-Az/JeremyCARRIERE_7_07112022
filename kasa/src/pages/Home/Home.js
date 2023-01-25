@@ -4,14 +4,17 @@ import Banner from '../../components/Banner/Banner'
 import Cards from '../../components/Cards/Cards'
 import styles from './Home.module.css'
 export default function Home() {
+    // On déclare une nouvelle variable d'état, data qui est au départ []
     const [data, setData] = useState([]);
     
+    // On utilise useEffect pour fetch les donnés du json
     useEffect(() => {
         fetch("../logement.json")
         .then(res => res.json())
         .then(body => setData(body));
       }, []);
 
+    // On crée un tableau avec la méthode map qu'on va retourner dans le composant Cards
     const cardsElements = data.map(card => {
         console.log(card.id)
         return <Cards 
