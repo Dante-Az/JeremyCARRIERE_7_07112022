@@ -5,8 +5,11 @@ export default function Erreur() {
     return(
         <div className={styles.errorBlock}>
             <h1 className={styles.errorNumber}>404</h1>
-            <h2 className={styles.errorText}>Oups! La page que vous demandez n'existe pas.</h2>
-            <p>
+            <div className={styles.errorTextBlock}>
+                <h2 className={styles.errorText}>Oups! La page que&nbsp;</h2>
+                <span className={styles.errorText}>vous demandez n'existe pas.</span>
+            </div>
+            <p className={styles.errorLinks}>
                 <Link to="/" className={styles.errorLink}>Retourner sur la page d’accueil</Link>
             </p>
         </div>
