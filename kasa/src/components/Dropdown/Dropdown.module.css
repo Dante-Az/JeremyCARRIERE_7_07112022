@@ -28,7 +28,7 @@
 .list {
     list-style: none;
     padding: 0;
-    margin: 23px 12px auto 20px;
+    margin: 36px 12px auto 20px;
 }
 
 .dropdownRowRadius {
@@ -45,7 +45,7 @@
 
 .dropdownTitleRow {
     font-size: 18px;
-    margin: 13px 18px;
+    margin: 13px 20px;
 }
 
 .dropdownArrow {
@@ -61,7 +61,7 @@
     color: #FF6060;
     font-weight: 400;
     font-size: 24px;
-    margin: 36px 18px 19px;
+    margin: 36px 20px 19px;
 }
 
 .dropdownArray {
@@ -84,7 +84,11 @@
 
     .dropdownText {
         font-size: 18px;
-        margin: 23px 6px 52px 12px
+        margin: 23px 6px 27px 12px
+    }
+
+    .list {
+        margin: 23px 6px 27px 12px;
     }
 
     .dropdownTitleRow {
