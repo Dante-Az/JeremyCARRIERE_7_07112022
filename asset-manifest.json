@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "//dante-az.github.io/JeremyCARRIERE_7_07112022/static/css/main.437bfa18.css",
+    "main.js": "//dante-az.github.io/JeremyCARRIERE_7_07112022/static/js/main.f83c9667.js",
+    "static/media/IMG.png": "//dante-az.github.io/JeremyCARRIERE_7_07112022/static/media/IMG.ac3aa7396c2c7cd05e2e.png",
+    "static/media/LOGO.svg": "//dante-az.github.io/JeremyCARRIERE_7_07112022/static/media/LOGO.410c8a2808a10720d175a598f6349727.svg",
+    "index.html": "//dante-az.github.io/JeremyCARRIERE_7_07112022/index.html",
+    "static/media/arrow.svg": "//dante-az.github.io/JeremyCARRIERE_7_07112022/static/media/arrow.b6c004f26470f47a627f2be75e48b951.svg",
+    "static/media/sliderArrow.svg": "//dante-az.github.io/JeremyCARRIERE_7_07112022/static/media/sliderArrow.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/starIcon.svg": "//dante-az.github.io/JeremyCARRIERE_7_07112022/static/media/starIcon.4609a8dd65d25f488bbb4f5127f1739b.svg",
+    "main.437bfa18.css.map": "//dante-az.github.io/JeremyCARRIERE_7_07112022/static/css/main.437bfa18.css.map",
+    "main.f83c9667.js.map": "//dante-az.github.io/JeremyCARRIERE_7_07112022/static/js/main.f83c9667.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.437bfa18.css",
+    "static/js/main.f83c9667.js"
+  ]
+}
