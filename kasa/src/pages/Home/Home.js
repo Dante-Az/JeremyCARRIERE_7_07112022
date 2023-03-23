@@ -8,6 +8,7 @@ export default function Home() {
     const [data, setData] = useState([]);
     
     // On utilise useEffect pour fetch les donnés du json
+    // useEffect indique à React que notre composant doit exécuter quelque chose après chaque affichage. Elle s'exécute après le 1er affichage et à chaque maj du DOM
     useEffect(() => {
         fetch("../logement.json")
         .then(res => res.json())
